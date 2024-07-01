@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+</head>
+
+<body>
+    <div class="counter">
+        <h1 class="countLabel" id="countLabel">0</h1>
+    </div>
+
+    <div class="buttons"> 
+        <button type="submit" id="stopbtn" class="btn">Stop</button>
+        <button type="submit" id="restbtn" class="btn">Reset</button>
+        <button type="submit" id="startbtn" class="btn">Start</button>
+    </div>
+</body>
+
+<script>
+    let countLabel = document.getElementById("countLabel");
+    let decreasebtn = document.getElementById("stopbtn");
+    let restbtn = document.getElementById("restbtn");
+    let increasebtn = document.getElementById("startbtn");
+
+    let count = 0;
+    let intervalId; // Variable to store the interval ID
+
+// let iscounter = false;
+  function increasecount () {
+     
+            count++;
+        countLabel.innerHTML = count;
+    }
+       
+    
+    startbtn.onclick = function(){
+        intervalId= setInterval(increasecount,1000);
+    } 
+ 
+
+    stopbtn.onclick = function () {
+        countLabel.innerHTML = count;
+        clearInterval(intervalId);
+    }
+
+    restbtn.onclick = function () {
+        count = 0;
+        countLabel.innerHTML = count;
+        clearInterval(intervalId);
+
+    }
+
+</script>
+<style>
+    .counter {
+        /* width:800px; */
+        /* height: 400px; */
+        /* background-color: blue  ;*/
+        display: flex;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0;
+    }
+
+    .counter h1 {
+        color: black;
+        font-size: 80px;
+    }
+
+    .btn {
+        color: white;
+        background-color: lightblue;
+        width: 50%;
+        height: 100%;
+        display: block;
+        font-size: 25px;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.25s;
+
+    }
+
+    .buttons {
+        position: relative;
+        top: 10px;
+        width: 100%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .btn:hover {
+background-color: darkblue;
+
+}
+</style>
+
+</html>

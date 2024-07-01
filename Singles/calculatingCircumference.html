@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate Circumference</title>
+</head>
+<body>
+    <h3>Calculate Circumference</h3>
+<input type="text" id="userinput" placeholder="Enter Radius">
+<button type="submit" id = "submit">Submit</button>
+
+</body>
+<script>
+document.getElementById("submit").onclick = function(){
+    const PI = 3.14;
+    
+    let radius;
+    radius = document.getElementById("userinput").value;
+
+    radius = Number.parseInt(radius);
+    let circumference = 2 *PI *radius ;
+    document.write(circumference);
+}
+
+
+</script>
+</html>

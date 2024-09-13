@@ -1,0 +1,108 @@
+body {
+    background: linear-gradient(hsl(0, 30%, 49%), hsl(235, 23%, 54%));
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    font-family: 'The Aesthetic Essential', sans-serif;
+}
+
+
+#main {
+    height: 450px;
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    /* background-color: hsl(0, 100%, 50%); */
+    background: linear-gradient(hsl(226, 55%, 23%), hsl(0, 71%, 49%));
+
+    border: 2px solid black;
+
+}
+
+#inputcontainer {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex: 1 1 auto;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-bottom: 2px solid black;
+}
+
+
+#searchbtn {
+    background-color: hsl(197, 100%, 45%);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#searchbtn:hover {
+    background-color: hsl(197, 100%, 55%);
+
+}
+
+#searchbtn:active {
+    background-color: hsl(197, 100%, 35%);
+}
+
+
+#pokename {
+    text-align: center;
+    padding: 10px;
+
+}
+
+#pokename::placeholder {
+    text-align: center;
+}
+
+#pokeimg {
+    background-color: white;
+    width: 80%;
+    height: inherit;
+    border: 2px solid black;
+
+}
+
+#pokeimgcontainer {
+    width: inherit;
+    height: 150px;
+    margin: 10px auto 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#pokedetails {
+    padding: 10px;
+    border-top: 2px solid black;
+    color: white;
+    column-count: 2;
+    column-gap: 10px;
+}
+
+#pokedetails p {
+    margin: auto;
+    padding: 20px 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#pokeimg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+
+}
+
+#image {
+    width: 300px;
+}

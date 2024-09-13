@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="checkbox" id="Subscribe">   <label for="Subscribe">Subscribe</label>
+<br> <br>
+    
+    <input type="radio" id="Mastercard" name="paymentoption" value="Mastercard">
+    <label for="Mastercard">Mastercard</label><br>
+    <input type="radio" id="Visa" name="paymentoption" value="Visa">
+    <label for="Visa">Visa</label><br>
+    <input type="radio" id="Paypal" name="paymentoption" value="Paypal">
+    <label for="Paypal">Paypal</label>
+<br><br>
+    <button type="submit" id="mySubmit">submit</button>
+    <button type = "reset" id = "Clear" for = "paymentoption">Clear</button>
+
+    <p id="subResult"></p>
+    <p id="paymentResult"></p>
+
+
+     
+
+</body>
+</html>
+
+<script>
+const Subscribe = document.getElementById("Subscribe");
+const Mastercard = document.getElementById("Mastercard");
+const Visa = document.getElementById("Visa");
+const Paypal = document.getElementById("Paypal");
+const mySubmit = document.getElementById("mySubmit");
+const Clear = document.getElementById("Clear");
+mySubmit.onclick = function (){
+if (Subscribe.checked){
+    subResult.innerHTML  = "You are subscribed";
+}else {
+    subResult.innerHTML  = "You are  not subscribed";
+
+}
+
+if (Mastercard.checked) {
+    paymentResult.innerHTML  = "You choose Mastercard as payment option";
+}
+
+else if (Paypal.checked) {
+    paymentResult.innerHTML  = "You choose Paypal as payment option";
+}
+
+else  if (Visa.checked) {
+    paymentResult.innerHTML  = "You choose Visa as payment option";
+}
+else  {
+    paymentResult.innerHTML  = "You must select a payment type";
+}
+}
+
+Clear.onclick = function (){
+    document.getElementById("Mastercard").checked = false;
+    document.getElementById("Visa").checked = false;
+    document.getElementById("Paypal").checked = false;
+    document.getElementById("Subscribe").checked = false;
+
+
+}
+
+
+</script>
+

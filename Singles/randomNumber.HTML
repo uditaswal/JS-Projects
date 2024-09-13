@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="title">Click on Roll to roll the dice</h1>
+    <div class="button">
+    <button class="btn" id="btn" >Roll</button>
+    <button class="btn" id="clear" >Clear</button>
+</div>
+    <h1 id="num1"></h1>
+    <h1 id ="num2"></h1>
+    <h1 id ="num3"></h1>
+</body>
+
+<script>
+const min= 1;
+const max = 6;
+const roll = document.getElementById("btn");
+const clear = document.getElementById("clear");
+let num1 = document.getElementById("num1");
+let num2 = document.getElementById("num2");
+let num3 = document.getElementById("num3");
+let random;
+roll.onclick = function(){
+
+    random = Math.floor((Math.random() * max) + min);
+     num1.innerHTML = random;
+    random = Math.floor((Math.random() * max) + min);
+    num2.innerHTML = random;
+    random = Math.floor((Math.random() * max) + min);
+    num3.innerHTML = random;
+
+}
+
+clear.onclick = function(){
+    num1.innerHTML = "";
+    num2.innerHTML = "";
+    num3.innerHTML = "";
+}
+
+
+</script>
+<style>
+
+  h1{
+text-align: center;
+
+  }
+
+    
+.btn {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+        color: white;
+        background-color: lightblue;
+        width: 25%;
+        height: 100%;
+        display: block;
+        font-size: 25px;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.25s;
+margin-bottom: 20px;
+
+    }
+
+    .btn:hover {
+background-color: darkblue;
+
+}
+.button {
+        position: relative;
+        top: 10px;
+        width: 100%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+
+</style>
+</html>

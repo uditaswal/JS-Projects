@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Move Image</title>
+  <style>
+    #imageContainer {
+      position: relative;
+      height: 300px; /* Set the height of the container */
+    }
+    img {
+      position: absolute;
+      top: 0;
+    }
+  </style>
+</head>
+<body>
+
+<div id="imageContainer">
+  <!-- Container for the image -->
+</div>
+
+<button onclick="moveDown()">Move Down</button>
+
+<script>
+  var value = 0;
+  var imgElement = document.createElement("img");
+  imgElement.src = "https://cdn2.iconfinder.com/data/icons/people-icons-3/72/24-512.png";
+  imgElement.alt = "Description of the image";
+  imgElement.style.width = "30px"
+  var container = document.getElementById("imageContainer");
+  container.appendChild(imgElement);
+
+  function moveDown() {
+    value += 10; // Adjust the value according to the desired movement
+    imgElement.style.top = value + "px";
+    console.log(value);
+  }
+</script>
+
+</body>
+</html>

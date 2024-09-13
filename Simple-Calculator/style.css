@@ -1,0 +1,47 @@
+body{
+background-color: black;
+color: white;
+font-family: 'Roboto', sans-serif;
+align-items: center ;
+margin: auto;
+justify-content: center;
+text-align: center;
+}
+
+
+.container
+{
+    padding: 30px;
+    
+    display: inline-block;
+    align-items: center ;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    border: solid 2px white;
+
+}
+
+
+input{
+    text-align: center;
+margin-bottom: 20px;
+}
+
+.btn{
+color: white;
+background-color: hwb(198 0% 0%);
+ border: none;
+ cursor: pointer;
+height: 50px;
+width: 50px;
+ margin: 1%;
+}
+
+.btn:hover{
+background-color: red;
+}
+
+.btn:active{
+    background-color: green;
+}

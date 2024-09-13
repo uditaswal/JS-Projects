@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <form id="myForm">     
+<label for="input1">Enter First Number: &#160; &#160; &#160;</label>  <input type="number" id = "input1" required> <br>
+<label for="input2">Enter Second Number: </label> <input type="number" id="input2" required> <br>
+
+<button class = "btn" id="plus" type="button" onclick="inputPresenceCheck();addition () ">+</button> 
+<button class = "btn" id="minus" type="button" onclick="subtract()">-</button>
+<button class = "btn" id="multiply" type="button" onclick="multiplication()">*</button>
+<button class = "btn" id="divide" type="button"  onclick="division()">/</button>
+
+<h3 id="result">0</h3>
+      
+</form>
+    </div>
+</body>
+</html>

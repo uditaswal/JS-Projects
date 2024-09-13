@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <link rel="icon" href="img/favicon.png">
+
+    <title>Rock Paper Scissor</title>
+  </head>
+
+  <body>
+    <header>
+      <div>
+        <h1>Rock Paper Scizzor</h1>
+      </div>
+    </header>
+    <div class="border">
+      <button id="rockBTN" class="mybuttons" type="button">
+        <img src="img/Rock.png" alt="Rock" />
+      </button>
+      <button id="paperBTN" class="mybuttons" type="button">
+        <img src="img/Paper.png" alt="Paper" />
+      </button>
+      <button id="scizzorsBTN" class="mybuttons" type="button">
+        <img src="img/Scizzor.png" alt="Scizzor" />
+      </button>
+      <br><br>
+      <h2>
+        You Chose:
+        <span id="userInput"></span>
+      </h2>
+      <br>
+      <h2>
+        Computer Chose:
+        <span id="computerInput"></span>
+      </h2>
+      <br>
+      <h1><span id="result"></span></h1>
+
+      <h2 id = "winStreak">Win Streak:<span id="UserWinCount">0</span></h2>
+    
+    </div>
+
+    
+  </body>
+</html>

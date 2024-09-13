@@ -1,0 +1,44 @@
+* {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+
+header {
+  height: 5rem;
+  line-height: 5rem;
+  background-color: #00008b;
+  position: relative;
+  margin-bottom: 5rem;
+}
+
+header h1 {
+  color: white;
+}
+
+body {
+  background-color: bisque;
+}
+
+button {
+  width: 15vh;
+  height: 15vh;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+img {
+  width: inherit;
+  height: inherit;
+  border-radius: 50%;
+}
+
+.border {
+  padding: 20px;
+  display: inline-block;
+  border: 5px solid black;
+}

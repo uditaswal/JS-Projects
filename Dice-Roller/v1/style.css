@@ -1,0 +1,41 @@
+body{
+    text-align: center;
+    align-items: center;
+}
+
+h1
+{
+    font-size: 50px;
+}
+
+label{
+    font-weight: bold;
+}
+
+button{
+    padding: 5px;
+    background-color: hsl(206, 100%, 25%);
+    color: white;
+margin-left: 5px;
+cursor: pointer;;
+border: solid black;
+}
+
+button:hover{
+    background-color: red;
+    color: white;
+}
+
+button:active{
+    background-color: green;
+}
+input{
+    width: 120px;
+    height: 20px;
+    border: solid;
+text-align: center;
+}
+#img{
+    width: 100%;
+    margin: 10px;
+}

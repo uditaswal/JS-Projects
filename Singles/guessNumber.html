@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Number</title>
+</head>
+<body>
+</body>
+<script>
+    function logic (){
+        
+        let correctGuess = false;
+
+while (!correctGuess) {
+    let userInput = window.prompt(`Please choose a number between ${min} and ${max}`);
+    userInput = Number.parseInt(userInput);
+
+    if (userInput === null) {
+        break;
+    }
+
+    // document.write(userInput, " and " , number);
+
+    if (isNaN(userInput)) {
+        window.alert("Please enter a valid number");
+    } else if (userInput < min || userInput > max) {
+        window.alert("Please enter a valid number within the specified range");
+    } else {
+        attempts++;
+
+        if (userInput > number) {
+            window.alert("Wrong! You guessed too high!");
+        } else if (userInput < number) {
+            window.alert("Wrong! You guessed too low!");
+        } else {
+            window.alert(`Congratulations, you won  in ${attempts} attempts. The correct answer was ${number}`);
+            correctGuess = true;
+        } 
+    }
+}
+}
+    
+// let running = true;
+let min = 0;
+let max = 100;
+let number = Math.floor((Math.random() * max) + min);
+let attempts=0;
+
+
+logic ();
+
+
+</script>
+
+</html>

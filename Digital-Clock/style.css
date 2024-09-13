@@ -1,0 +1,20 @@
+body {
+    background-color: #000;
+    color: white;
+    margin: 0;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div {
+    text-align: center;
+    border: double red 2px;
+    position: absolute;
+    top: 40%;
+    width: 120vh;
+}

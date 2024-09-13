@@ -1,0 +1,66 @@
+body {
+    background-color: #000;
+    color: grey;
+    margin: 0;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;   
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 100vh;
+}
+
+#heading-box{
+    /* margin-bottom: 50px; */
+    font-size: 4vh;
+}
+
+#border-box {
+    background-color: white;
+    border: solid 5px grey;
+    border-radius: 12%;
+    width: 50vh;
+    height: 18vh;
+}
+
+#button-box {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+button {
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 15%;
+}
+
+#start-btn {
+    background-color: rgb(78, 255, 47);
+}
+
+#stop-btn {
+    background-color: rgb(255, 47, 47);
+}
+
+#reset-btn {
+    background-color: rgb(47, 213, 255);
+}
+
+button:hover {
+    opacity: 60%;
+}
+
+button:active {
+    font-weight: bold;
+}

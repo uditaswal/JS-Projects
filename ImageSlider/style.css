@@ -1,0 +1,35 @@
+body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden
+}
+
+#car-img {
+    width: 50vh;
+}
+
+
+.arrow-button {
+    font-size: 2rem;
+    text-align: center;
+    padding: 1rem;
+    border: none;
+    border-radius: 250px;
+    background-color: hsl(0, 0%, 80%);
+    cursor: pointer;
+}
+
+.arrow-button:hover {
+    background-color: hsl(0, 0%, 70%);
+
+}
+
+.arrow-button:active {
+    background-color: hsl(0, 0%, 50%);
+color: white;
+
+}

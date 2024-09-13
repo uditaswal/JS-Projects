@@ -1,0 +1,89 @@
+body {
+    background: linear-gradient(hsl(0, 30%, 49%), hsl(235, 23%, 54%));
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: Arial, sans-serif; /* Added a generic font-family */
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+#inputdiv {
+    width: 60vh;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;  /* Added to center the inputdiv horizontally */
+    transform: translateX(-50%);  /* Added to center the inputdiv horizontally */
+    gap: 15px;
+}
+
+#inputbox {
+    border: 2px solid hsl(0, 0%, 0%);
+    border-radius: 10px;
+    width: 100%;
+    height: inherit;
+    font-size: large;
+    text-align: center;
+    font-weight: bold;
+    outline: none;  /* Remove default outline */
+}
+
+#inputbox::placeholder {
+    text-align: center;
+}
+
+#getWeatherbtn {
+    color: white;
+    background-color: hsl(149, 93%, 35%);
+    border: 2px solid #000000;
+    border-radius: 10px;
+    font-weight: bold;
+    width: 30%;
+    height: inherit;
+    font-size: large;
+    cursor: pointer;  /* Added to indicate clickable button */
+}
+
+#getWeatherbtn:hover {
+    background-color: hsl(149, 93%, 45%);
+}
+
+#getWeatherbtn:active {
+    background-color: hsl(149, 93%, 25%);
+}
+
+#weatherbox {
+    width: 50vh;
+    max-height: 500px;  /* Changed height to max-height */
+    /* border: 2px solid black; */
+    box-shadow: 2px 2px 5px hsl(0, 0%, 2%);
+    border-radius: 2%;
+    background: linear-gradient(hsl(360, 72%, 65%), hsl(235, 62%, 73%));
+    display: none;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    overflow-y: auto;  /* Added to add scroll if content exceeds the height */
+}
+
+#imgbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#image {
+    display: none;
+    max-width: 100%;  /* Added to ensure image does not exceed parent width */
+    height: auto;  /* Maintain aspect ratio */
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Conversion</title>
+</head>
+
+<body>
+    <div id="box">
+        <h1 id="heading">Temperature <br> Coversion:</h1>
+        <input type="number" id="inputbox">
+        <br>
+        <br>
+        <input type="radio" id="CtoF" name="unit"><label for="CtoF" id="text">Celsius &rarr; Fahrenheit</label>
+        <br>
+        <input type="radio" id="FtoC" name="unit"><label for="FtoC" id="text">Fahrenheit &rarr; Celsius</label>
+        <br>
+        <br>
+        <button id="submit" type="submit">submit</button>
+        <h1 id="temp">0</h1>
+    </div>
+</body>
+<Style>
+    #box {
+        display: inline-block;
+        margin: auto;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 350px;
+        height: 400px;
+        position: fixed;
+        margin-left: 35%;
+        border: 4px solid black;
+    }
+
+    #heading {
+        color: rgb(0, 149, 255);
+
+    }
+
+    #inputbox {
+        width: 200px;
+        height: 50px;
+        text-align: center;
+        border: 3px solid black;
+        margin-left: 5%;
+        background-color: white;
+    }
+
+    #text {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    #submit {
+        width: 100px;
+        padding: 10px;
+        font-size: 20px;
+        color: white; 
+        background-color: red;
+        border-radius: 10px;
+    }
+</Style>
+<Script>
+    let inputbox = document.getElementById("inputbox");
+    let CtoF = document.getElementById("CtoF");
+    let FtoC = document.getElementById("FtoC");
+    let submit = document.getElementById("submit");
+    let temp = document.getElementById("temp");
+    let value;
+            // temp.textContent = inputbox;
+
+    submit.onclick = function () {
+        let inputValue = Number(inputbox.value);
+        if (CtoF.checked) {
+             inputValue = inputbox.value;
+            value = (inputValue * 9 / 5) + 32;
+            temp.textContent = value.toFixed() + " °F";
+
+        }
+        else if (FtoC.checked) {
+            value = (inputValue - 32) * 5 / 9;
+            temp.textContent = value.toFixed() + " °C";
+        }
+
+        else {
+            temp.textContent = "Please choose a input value";
+
+        }
+    }
+</Script>
+
+</html>

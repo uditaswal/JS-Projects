@@ -6,7 +6,6 @@ need to add a toggle for celcius aand farenhiey
 */
 
 
-// const apikey = "c14f833b4054e9db7d2acf7fef4f82ad";
 import { API_KEY } from './keys.js';
 
 // Use API_KEY in your code

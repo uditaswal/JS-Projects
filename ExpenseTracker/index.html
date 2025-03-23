@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <title>Expense Tracker</title>
+</head>
+<body class="h-screen w-screen  text-white bg-black flex flex-col items-center align-middle justify-center font-serif ">
+<div class="bg-mygrey rounded-md border-gray-700 border-1 max-w-lvh" id="main-div">
+    <div class="text-5xl font-bold p-4 m-6 text-center" id="title-div">Expense Tracker</div>
+<div id="input-div" class="flex flex-row justify-end m-2 p-3">
+        <input id="inputExpense" type="text" placeholder="Enter a new expense..."class="bg-black/50 text-center placeholder:text-gray-400 mr-2   w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all ">
+        <input id="inputAmount" min="0" type="number" placeholder="Enter the amount..."class="bg-black/50 text-center placeholder:text-gray-400 mr-2   w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all">
+        <button class="px-6 py-2 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-50 transition-all" id="addExpenseBtn">Add Expense</button>
+</div>
+<div class="" id="display-div" >
+    
+
+<div id="expenses-table-div" class="relative overflow-x-auto shadow-md sm:rounded-lg m-2 hidden">
+    <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+            <tr>
+                <th scope="col" class="px-6 py-3">
+                    Expense
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Amount
+                </th>
+                <th scope="col" class="px-6 py-3">    
+                </th>
+                </th>
+            </tr>
+        </thead>
+        <tbody id="expense-list-div" >
+                     
+        </tbody>
+        <tfoot class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+            <tr>
+                <th scope="col" class="px-6 py-3">
+                    TOTAL
+                </th>
+                <th id="total-amount-display" scope="col" class="px-6 py-3">
+                    $ 0.00
+                </th> <th id="total-amount-display" scope="col" class="px-6 py-3">
+                </th>
+                </th>
+            </tr>
+        </tfoot>
+    </table>
+</div>
+</div>
+</div>
+</body>
+<script src="script.js" defer></script>
+</html>

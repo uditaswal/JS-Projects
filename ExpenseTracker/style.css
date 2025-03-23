@@ -1,0 +1,10 @@
+@import "tailwindcss";
+@layer utilities {
+    /* Custom Background Color */
+    .bg-mygrey {
+      @apply bg-[rgba(36,34,34,0.579)];
+    }.bg-mygrey-2 {
+      background-color: rgb(43, 42, 42);
+    }
+
+}
